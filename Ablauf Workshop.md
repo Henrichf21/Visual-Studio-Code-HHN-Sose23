@@ -29,4 +29,5 @@
 
  - was passiert wenn Wlan nicht geht?
  - Was passiert bei einem Ausfall von GitHub?
+ 
  - Wie können Studierende bei einem nicht unterstützten Betriebssystem mitarbeiten?
