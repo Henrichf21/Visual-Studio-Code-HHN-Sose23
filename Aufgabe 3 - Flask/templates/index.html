@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meine Flask-Anwendung</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Willkommen zum Workshop Kunden Seite</h1>
+    <p>Dies ist eine Webseite</p>
+    {% if customer %}
+    <p>Kunden: </p>
+                {%for customer_id, nachname, geburtstag, strasse in customer%}
+                Kundennummer: {{customer_id}}  <br>
+                Vorname: <br>
+                Nachname: {{nachname}} 
+                Geburtstag: {{geburtstag}} 
+                Straße: {{strasse}} <br>
+                {%endfor%}
+    {% endif %}
+    
+</body>
+</html>
