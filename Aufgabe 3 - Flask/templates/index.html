@@ -9,9 +9,9 @@
     <p>Dies ist eine Webseite</p>
     {% if customer %}
     <p>Kunden: </p>
-                {%for customer_id, nachname, geburtstag, strasse in customer%}
+                {%for customer_id, vorname, nachname, geburtstag, strasse in customer%}
                 Kundennummer: {{customer_id}}  <br>
-                Vorname: <br>
+                Vorname: {{vorname}}<br>
                 Nachname: {{nachname}} 
                 Geburtstag: {{geburtstag}} 
                 Straße: {{strasse}} <br>
